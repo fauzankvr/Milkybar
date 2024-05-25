@@ -1,0 +1,531 @@
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    font-family: "VAG Rounded W01 Regular";
+    overflow-x: hidden;
+    background-color: #fffbe6;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.header{
+        width: 100%;
+        height: 117px;
+        background-color: #e30420;
+        padding: 30px 0px 10px;
+    
+}
+.logodiv {
+    width: 30%;
+    float: left;
+}
+.logo{
+    width: 313px;
+}
+
+
+.btnicons {
+    width: 20%;
+    float: right;
+
+}
+
+.btnicons img {
+    width: 26px;
+    margin-left: 5px;
+    float: left;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.btnicons img:hover{
+    opacity: 70%;
+}
+
+.btnicons button {
+    color: #e30420;
+    background-color: #fff;
+    border-radius: 14px;
+    height: 30px;
+    width: 110px;
+    border-style: hidden;
+    font-weight: 500;
+   font-family: "VAG Rounded W01 Regular";
+    font-size: 15px;
+     float: left;
+    margin-right: 5px;
+}
+
+
+.navbar{
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.navbar ul{
+   margin: 0;
+    
+}
+.navbar ul li{
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+
+}
+.navbar ul li:first-child{
+    margin-left: 0;
+}
+.navbar ul li a{
+     position: relative;
+     display: block;
+     padding: 10px 5px;
+     font-size: 1.1rem;
+     font-weight: 900;
+     text-decoration: none;
+     color: #fff;
+     overflow: hidden;
+}
+.navbar ul li a span,.navbar ul li a::after{
+    transition: ease 0.3s;
+
+}
+.navbar ul li a span{
+    display: block;
+}
+.navbar ul li a::after{
+        position: absolute;
+        bottom: -5px;
+        display: block;
+        content: " ";
+        background: #fff;
+        height: 10px;
+        border-radius: 5px;
+}
+.navbar ul li a::after{
+    left: 50%;
+    width: 0;
+}
+.navbar ul li a:hover::after {
+    left: 0;
+    width: 100%;
+}
+.navbar ul li a:hover span{
+    transform: translateY(-10px);
+}
+.cokiesicon{
+    position: absolute;
+    background-color: rgb(3, 68, 3);
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin-top: 90vh;
+    z-index: 100;
+    margin-left: 10px;
+    position: fixed;
+}
+.cokiesicon img{
+    width: 40px;
+    filter: invert(2);
+    margin: 7px;
+}
+
+.image-container{
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    width: 100vw;
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+.image-container img:nth-of-type(1) {
+    animation-delay: 9s;
+}
+
+.image-container img:nth-of-type(2) {
+    animation-delay: 6s;
+}
+
+.image-container img:nth-of-type(3) {
+    animation-delay: 3s;
+}
+
+.image-container img:nth-of-type(4) {
+    animation-delay: 0s;
+}
+
+@keyframes multiple-image-crossfade {
+    0% {
+        opacity: 1;
+    }
+
+    17% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    width: 99vw;
+    animation-name: multiple-image-crossfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+}
+
+.image-container img:nth-of-type(1) {
+    animation-delay: 9s;
+}
+
+.image-container img:nth-of-type(2) {
+    animation-delay: 6s;
+}
+
+.image-container img:nth-of-type(3) {
+    animation-delay: 3s;
+}
+
+.image-container img:nth-of-type(4) {
+    animation-delay: 0s;
+}
+.arrow{
+    position: absolute;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 15%;
+    float: left;
+}
+.arrow img{
+    width: 45px;
+    height: 45px;
+    justify-content: space-between;
+    margin-right: 900px;
+}
+
+
+main.shadow{
+    width: 100vw;      
+}
+main .shadow img{
+    width: 100vw;
+    height: 110px;
+    padding-top: 410px;
+    z-index: 1;
+    position: relative;
+    
+    
+}
+
+.bottum-section h1{
+    color:#0e2360;
+    font-size: 58px;
+    text-align: center;
+}
+.bottum-section h1 span{
+    font-size: 15px;
+    vertical-align: 30px;
+}
+main .radios {
+    width: 15%;
+    height: 15%;
+    margin-top: 100px;
+    margin-left: 50%;
+
+}
+
+main .radios .btnblue {
+    background-color: #91c9da;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-style: none;
+    margin-left: 4px;
+}
+.box3{
+    width: 100vw;
+    height: 100%;
+    background-color: #91c9da;
+    margin-top: 40px;
+}
+.box3 h1{
+    padding-top: 70px;
+    font-size: 70px;
+    text-align: center;
+    color: #0e2360;
+    
+}
+
+.box3 p{
+    text-align: center;
+    color: #0e2360;
+    font-size: large;
+    font-family: "F18VAG Rounded M Normal";
+    
+}
+.box3 button{
+    position: relative;
+    left: 45%;
+    border-style: hidden;
+    background-color: #0076cd;
+    color: #fff;
+    height: 45px;
+    width: 170px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "VAG Rounded W01 Regular";
+    
+}
+.cards img{
+    margin-left: 60px;
+}
+.icons3{
+    padding: 30px;
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    
+    
+}
+.icons3 img{
+       width: 30px;
+       height: 30px;
+       margin-left:10px ;
+       
+}
+.icon{
+  background-color: #0e2360;
+}
+.links{
+    display: flex;
+}
+.link-1{
+    background-image: url('https://api.tintup.com/v2/posts/image/7961963537');
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    margin-left: 65px;
+}
+.link-2 {
+    background-image: url('https://api.tintup.com/v2/posts/image/7961963538'); 
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    margin-left: 65px;
+}
+.link-3 {
+     background-image: url('https://api.tintup.com/v2/posts/image/7961963539');
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    margin-left: 65px;
+}.link-4 {
+    background-image: url('https://api.tintup.com/v2/posts/image/7961963540');
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    margin-left: 65px;
+}
+
+.box4{
+    height: 400px;
+    width: 100%;
+
+}
+.box4 img{
+    width: 100vw;
+    height: 400px;
+}
+.box4 h2{
+    font-size: 50px;
+    color: #f3f3f3;
+    position: relative;
+    top: 150px;
+    left: 30%;   
+}
+.tow-packs img{
+    width: 360px;
+    position: relative;
+    top: -80px;
+}
+.tow-packs img:nth-child(1){
+        padding-left: 120px;
+}
+.tow-packs img:nth-child(2) {
+    padding-left: 390px;
+}
+.arrow2 {
+    position: absolute;
+    display: flex;
+    margin-left: 8%;
+    margin-top: -25%;
+    float: left;
+}
+
+.arrow2 img {
+    width: 45px;
+    height: 45px;
+    justify-content: space-between;
+    margin-right:1050px;
+}
+.one-pack{
+    width: 50px;
+    height: 120px;
+    position: relative;  
+    margin: 0 auto;
+    margin-top: -210px;
+    padding-bottom: 100px;
+}
+.one-pack img {
+    margin-top: -300px;
+}
+.text-under{
+    margin-left: 10%;
+    display: flex; 
+    color: #0e2360;
+    margin-top: -100px;
+    margin-bottom: 70px;
+}
+
+.text-under .text-2{
+    margin-top: -150px;
+    padding-left: 190px;
+}
+.text-under .text-1{
+    padding-left:-20px ;
+}
+.text-under .text-3{
+    padding-left: 50px;
+}
+.radios2 {
+    width: 15%;
+    height: 15%;
+    margin-top: 25px;
+    margin-left: 45%;
+
+}
+.radios2 .btnblue{
+    background-color: #91c9da;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border-style: none;
+    margin-left: 4px;
+}
+
+.box5{
+    margin-top: 140px;
+    width: 100%;
+    height: 370px;
+    background-color: rgb(243, 240, 199);
+}
+.box5 img{
+    position: relative;
+    top: -150px;
+    height: 500px;
+    width: 100%;
+}
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: #e30420;
+}
+.col1 p{
+    width: 150px;
+    padding-left: 150px; 
+    color: #f3f3f3;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "F18VAG Rounded M Normal";
+    
+    
+}
+.col1 img{
+    
+    padding-top: 50px;
+    padding-left:110px;
+    width: 220px;
+
+}
+.col2{
+        position: relative;
+        margin-top: -290px;
+        margin-bottom: 90px;
+}
+.col2 h3{
+    font-size: 20px;
+    color: #f3f3f3;
+    position: relative;
+    margin-left: 450px;
+    
+}
+.col2 ul{
+        font-size: 15px;
+        margin-left: 400px;
+        list-style: none;
+        
+}
+.col2 a{
+    text-decoration: none;
+    color: #f3f3f3;
+    
+}
+.col2 li{
+    margin: 6px;
+    font-family: "F18VAG Rounded M Normal";
+}
+.col3 {
+    position: relative;
+    margin-top: -290px;
+    margin-bottom: 90px;
+}
+.col3 h3{
+    font-size: 20px;
+        color: #f3f3f3;
+        margin-left: 750px;
+}
+.col3 ul{
+    font-size: 15px;
+    margin-left: 700px;
+    list-style: none;
+}
+.col3 a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+.col3 li {
+    margin: 6px;
+    font-family: "F18VAG Rounded M Normal";
+}
+.footer-p{
+    color: #f3f3f3;
+    padding-left: 160px;
+    padding-top: 130px;
+    font-size: 15px;
+    font-family: "VAG Rounded LT W01 Thin";
+}
