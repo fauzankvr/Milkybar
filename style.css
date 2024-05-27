@@ -1,11 +1,25 @@
 
 body{
-    
     margin: 0;
     padding: 0;
     font-family: "VAG Rounded W01 Regular";
     overflow-x: hidden;
     background-color: #fffbe6;
+}
+
+.cokiesicon img {
+    width: 55px;
+    position: fixed;
+    bottom: 5px;
+    left: 7px;
+    z-index: 100;
+}
+.upicon img{
+        width: 65px;
+         position: fixed;
+         bottom: 5px;
+         right: 7px;
+        z-index: 100;
 }
 .wrapper{
     width: 90%;
@@ -15,35 +29,25 @@ body{
         width: 100%;
         height: 117px;
         background-color: #e30420;
-        padding: 30px 0px 10px;
+        padding: 30px 0px 15px;
     
 }
 .logodiv {
-    width: 30%;
     float: left;
 }
-.logo{
-    width: 313px;
-}
-
-
-.btnicons {
-    width: 20%;
+.btnicons { 
     float: right;
-
 }
-
 .btnicons img {
     width: 26px;
-    margin-left: 5px;
-    float: left;
+    margin-left: 7px;
+    float: right;
     padding-top: 3px;
     cursor: pointer;
 }
 .btnicons img:hover{
     opacity: 70%;
 }
-
 .btnicons button {
     color: #e30420;
     background-color: #fff;
@@ -52,171 +56,67 @@ body{
     width: 110px;
     border-style: hidden;
     font-weight: 500;
-   font-family: "VAG Rounded W01 Regular";
+    font-family: "VAG Rounded W01 Regular";
     font-size: 15px;
      float: left;
     margin-right: 5px;
 }
-
-
 .navbar{
     float: right;
-    margin-top: 40px;
-    margin-right: 20px;
+    padding-top: 30px;
 }
-
-.navbar ul{
-   margin: 0;
-    
+.navbar ul li:first-child{
+    margin-left: 0;
 }
 .navbar ul li{
     float: left;
     margin-left: 20px;
     list-style: none;
-
-}
-.navbar ul li:first-child{
-    margin-left: 0;
-}
-.navbar ul li a{
      position: relative;
-     display: block;
      padding: 10px 5px;
      font-size: 1.1rem;
      font-weight: 900;
-     text-decoration: none;
      color: #fff;
      overflow: hidden;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
-.navbar ul li a span,.navbar ul li a::after{
-    transition: ease 0.3s;
-
-}
-.navbar ul li a span{
+.navbar ul li span{
     display: block;
+    transition-duration: 0.3s;
+    
 }
-.navbar ul li a::after{
+.navbar ul li::after{
         position: absolute;
         bottom: -5px;
-        display: block;
         content: " ";
         background: #fff;
         height: 10px;
         border-radius: 5px;
+        left: 50%;
+        width: 0;
+        transition-duration: 0.3s;
 }
-.navbar ul li a::after{
-    left: 50%;
-    width: 0;
-}
-.navbar ul li a:hover::after {
+.navbar ul li:hover::after {
     left: 0;
     width: 100%;
 }
-.navbar ul li a:hover span{
+.navbar ul li:hover span{
     transform: translateY(-10px);
 }
-.cokiesicon{
-    position: absolute;
-    background-color: rgb(3, 68, 3);
-    height: 55px;
-    width: 55px;
-    border-radius: 50%;
-    margin-top: 90vh;
-    z-index: 100;
-    margin-left: 10px;
-    position: fixed;
-}
-.cokiesicon img{
-    width: 40px;
-    filter: invert(2);
-    margin: 7px;
-}
-
-.image-container{
-    position: relative;
-}
 
 .image-container img {
-    position: absolute;
     width: 100vw;
-    animation-name: multiple-image-crossfade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-}
-
-.image-container img:nth-of-type(1) {
-    animation-delay: 9s;
-}
-
-.image-container img:nth-of-type(2) {
-    animation-delay: 6s;
-}
-
-.image-container img:nth-of-type(3) {
-    animation-delay: 3s;
-}
-
-.image-container img:nth-of-type(4) {
-    animation-delay: 0s;
-}
-
-@keyframes multiple-image-crossfade {
-    0% {
-        opacity: 1;
-    }
-
-    17% {
-        opacity: 1;
-    }
-
-    25% {
-        opacity: 0;
-    }
-
-    92% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.image-container {
     position: relative;
-}
-
-.image-container img {
-    position: absolute;
-    width: 99vw;
-    animation-name: multiple-image-crossfade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-}
-
-.image-container img:nth-of-type(1) {
-    animation-delay: 9s;
-}
-
-.image-container img:nth-of-type(2) {
-    animation-delay: 6s;
-}
-
-.image-container img:nth-of-type(3) {
-    animation-delay: 3s;
-}
-
-.image-container img:nth-of-type(4) {
-    animation-delay: 0s;
+    
 }
 .arrow{
     position: absolute;
     display: flex;
     margin-left: 15%;
-    margin-top: 15%;
+    margin-top: -250px;
     float: left;
+    z-index: 2;
 }
 .arrow img{
     width: 45px;
@@ -232,11 +132,9 @@ main.shadow{
 main .shadow img{
     width: 100vw;
     height: 110px;
-    padding-top: 410px;
-    z-index: 1;
-    position: relative;
-    
-    
+    z-index: 1;   
+    position: absolute;
+    margin-top: -110px;
 }
 
 .bottum-section h1{
@@ -281,8 +179,8 @@ main .radios .btnblue {
 .box3 p{
     text-align: center;
     color: #0e2360;
-    font-size: large;
-    font-family: "F18VAG Rounded M Normal";
+    font-size: 20px;
+    font-family: "VAG Rounded LT W01 Thin";
     
 }
 .box3 button{
@@ -295,7 +193,7 @@ main .radios .btnblue {
     width: 170px;
     margin-top: 20px;
     margin-bottom: 35px;
-    border-radius: 15px;
+    border-radius: 25px;
     font-size: 20px;
     cursor: pointer;
     font-family: "VAG Rounded W01 Regular";
@@ -306,7 +204,7 @@ main .radios .btnblue {
 }
 .icons3{
     padding: 30px;
-    width: 20%;
+    width: 9%;
     margin: 0 auto;
     display: flex;
     
@@ -316,6 +214,7 @@ main .radios .btnblue {
        width: 30px;
        height: 30px;
        margin-left:10px ;
+       filter: invert(1);
        
 }
 .icon{
@@ -383,7 +282,7 @@ main .radios .btnblue {
     position: absolute;
     display: flex;
     margin-left: 8%;
-    margin-top: -25%;
+    margin-top: -36%;
     float: left;
 }
 
@@ -474,7 +373,7 @@ footer{
 }
 .col2{
         position: relative;
-        margin-top: -290px;
+        margin-top: -250px;
         margin-bottom: 90px;
 }
 .col2 h3{
@@ -501,7 +400,7 @@ footer{
 }
 .col3 {
     position: relative;
-    margin-top: -290px;
+    margin-top: -270px;
     margin-bottom: 90px;
 }
 .col3 h3{
@@ -524,8 +423,8 @@ footer{
 }
 .footer-p{
     color: #f3f3f3;
-    padding-left: 160px;
-    padding-top: 130px;
+    padding-left: 148px;
+    padding-top: 86px;
     font-size: 15px;
     font-family: "VAG Rounded LT W01 Thin";
 }
